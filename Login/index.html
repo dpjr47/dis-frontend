@@ -1,0 +1,71 @@
+<!DOCTYPE html>   
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script 
+            src="https://kit.fontawesome.com/64d58efce2.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>DIS | Department Information System | Login</title>
+        <link rel="stylesheet" href="styles.css" />
+        
+    </head>
+    <body>
+       <div class="box">
+            <div class="form-box">
+                <div class="login">
+                    <form action="" class="login-student">
+                        <h2 class="title">Student's Login</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user-circle"></i>
+                            <input type="text" placeholder="User Id">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <input type="submit" value="Login" class="btn solid">
+                    </form>
+
+                    <form action="" class="login-teacher">
+                        <h2 class="title">Teacher's Login</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user-circle"></i>
+                            <input type="text" placeholder="User Id">
+                        </div>
+                        <div class="input-field">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <input type="submit" value="Login" class="btn solid">
+                    </form>
+                </div>
+            </div>
+
+            <div class="panels-box">
+               <div class="panel left-panel">
+                   <div class="content">
+                       <h3>WELCOME BACK!</h3>
+                       <P>Enter your login credentials to access your account.<br/>Not a student?</P>
+                       <button class="btn transparent" id="teacher-login-btn">Teacher's Login</button>
+                   </div>
+
+                   <img src="img/student.svg" class="image" alt="">
+               </div>
+               
+               <div class="panel right-panel">
+                <div class="content">
+                    <h3>WELCOME BACK!</h3>
+                    <P>Enter your login credentials to access your account.<br/>Not a teacher?</P>
+                    <button class="btn transparent" id="student-login-btn">Student's Login</button>
+                </div>
+
+                <img src="img/teacher.svg" class="image" alt="">
+            </div> 
+            </div>
+       </div>
+       
+       <script src="app.js"></script>
+    </body>
+</html>
