@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Trade+Winds&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+body{
+  background: #f9faf8;
+  color: #000000;
+}
+
+a{
+   color: #000000;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.navbar{
+  background: #1ABC9C;
+  width: 99%;
+  height: 70px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   
+  border-radius: 10px;
+  margin: 10px 10px;
+  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar_left .logo a{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 40px;
+    
+}
+
+.navbar .navbar_right{
+   display: flex;
+    
+}
+
+.navbar .navbar_right img{
+  width: 35px;
+  border-radius: 50%;
+   
+}
+
+.navbar .navbar_right .icon_wrap{
+  cursor: pointer;
+   
+
+}
+
+.navbar .navbar_right .notifications{
+  margin-right: 25px;
+   
+}
+
+.navbar .navbar_right .notifications .icon_wrap{
+  font-size: 28px;
+   
+}
+
+.navbar .navbar_right .profile,
+.navbar .navbar_right .notifications{
+  position: relative;
+   
+}
+
+
+
+.navbar .profile .profile_dd,
+.notification_dd{
+  position: absolute;
+  z-index: 2;
+  top: 48px;
+  right: -15px;
+  user-select: none;
+  background: #fff;
+  border: 1px solid #c7d8e2;
+  height: auto;
+  width: 500px;
+  display: none;
+  border-radius: 3px;
+   
+  box-shadow: 10px 10px 35px rgba(0,0,0,0.125),
+              -10px -10px 35px rgba(0,0,0,0.125);
+}
+
+
+.navbar .profile .profile_dd:before,
+.notification_dd:before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    border: 10px solid;
+    border-color: transparent transparent #fff transparent;
+     
+}
+
+
+.notification_dd li {
+    border-bottom: 1px solid #f1f2f4;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+     
+}
+
+.notification_dd li .notify_icon{
+  display: flex;
+   
+}
+
+
+
+.notification_dd li.baskin_robbins .notify_icon .icon{
+  background-position: 0 -43px;
+   
+}
+
+.notification_dd li.mcd .notify_icon .icon{
+  background-position: 0 -86px;
+   
+}
+
+.notification_dd li.pizzahut .notify_icon .icon{
+  background-position: 0 -129px;
+   
+}
+
+.notification_dd li.kfc .notify_icon .icon{
+  background-position: 0 -178px;
+   
+}
+
+.notification_dd li .notify_data{
+  margin: 0 15px;
+  width: 185px;
+   
+}
+
+.notification_dd li .notify_data .title{
+  color: #000;
+  font-weight: 200;
+   
+}
+
+
+
+
+.notification_dd li.show_all{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+   
+}
+
+.notification_dd li.show_all p{
+  font-weight: 700;
+  color: #247721;
+  cursor: pointer;
+   
+}
+
+.notification_dd li.show_all p:hover{
+  text-decoration: underline;
+   
+}
+
+.navbar .navbar_right .profile .icon_wrap{
+  display: flex;
+  align-items: center;
+   
+}
+
+.navbar .navbar_right .profile .number{
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: 600;
+   
+}
+
+.navbar .navbar_right .profile .name{
+  display: inline-block;
+   
+  
+  font-weight: 200;
+}
+
+.navbar .navbar_right .icon_wrap:hover,
+.navbar .navbar_right .profile.active .icon_wrap,
+.navbar .navbar_right .notifications.active {
+  color: #0b1f00;
+   
+}
+ 
+
+
+.navbar .profile .profile_dd{
+  width: 225px;
+   
+}
+.navbar .profile .profile_dd:before{
+  right: 10px;
+   
+}
+
+.navbar .profile .profile_dd ul li {
+    border-bottom: 1px solid #f1f2f4;
+     
+}
+
+.navbar .profile .profile_dd ul li  a{
+    display: block;
+    padding: 15px 35px;
+    position: relative;
+     
+}
+
+
+
+.navbar .profile .profile_dd ul li  a:hover{
+  color: black;
+  background: #f0f5ff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+   
+}
+
+.navbar .profile .profile_dd ul li.profile_li a:hover {
+    background: transparent;
+    cursor: pointer;
+    color: inherit;
+     
+}
+
+.navbar .profile .profile_dd ul li .btn{
+    height: 32px;
+    padding: 7px 10px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    background: #247721;
+    width: 125px;
+    margin: 5px auto 15px;
+     
+}
+
+.navbar .profile .profile_dd ul li .btn:hover{
+  background: #000000;
+   
+}
+
+.navbar .profile.active .profile_dd,
+.navbar .notifications.active .notification_dd{
+  display: block;
+   
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease;
+    display: none;
+     
+    
+    
+
+}
+
+.popup .shadow {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+     
+}
+
+.popup .inner_popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: auto;
+    z-index: 4; 
+}
+
+.popup .notification_dd{
+  display: block;
+  position: static;
+  margin: 0 auto;
+  height: 357px;
+  overflow: auto;
+  
+   
+}
+
+.popup .notification_dd:before{
+   display: none;
+    
+}
+
+.popup .notification_dd li.title{
+  font-weight: 700;
+  color:  #247721;
+  display: flex;
+  justify-content: center;
+  position: relative;
+   
+}
+
+.popup .notification_dd li.title .close{
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+   
+}
+
+.popup .notification_dd li.title .close:hover{
+  opacity: 0.5;
+   
+}
+
+
+
+/*sidebar*/
+
+.hover_collapse .sidebar{
+	width: 70px;
+}
+
+.hover_collapse .sidebar ul li a .text{
+	display: none;
+}
+
+.sidebar{
+	position: fixed;
+	top: 60px;
+  left: 0;
+	width: 250px;
+	height: 88%;
+	background: #1ABC9C;
+  border-radius: 10px;
+  margin: 30px 10px;
+  z-index: 5;
+  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul li a{
+	display: block;
+	padding: 12px 25px;
+	color: rgb(0, 0, 0);
+	transition: all 0.5s ease;
+}
+
+.sidebar ul li a .icon{
+	font-size: 18px;
+	vertical-align: middle;
+	transition: background 0.2s ease;
+}
+
+.sidebar ul li a .text{
+	margin-left: 10px;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.sidebar ul li a:hover{
+	background: #0ed460;
+	color: rgb(0, 68, 3);
+  border-radius: 10px;
+}
+
+.click_collapse .sidebar{
+	transition: all 0.2s ease;
+}
+
+.click_collapse .main_container{
+	width: calc(100% - 250px);
+	margin-left: 250px;
+	transition: all 0.2s ease;
+}
+
+/*news box*/
+
+
+.newsbox{
+  position: relative;
+  width: 76rem;
+  height: 290px;
+  margin: 10px 95px;
+  z-index: 1; 
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+.contentbox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 1px;
+  z-index: 1; 
+ 
+}
+
+.newshead{
+
+  font-weight: bold;
+  padding: 5px;
+  background-color: #1ABC9C;
+  border-radius: 10px;
+  margin: 2px;
+  z-index: 1; 
+}
+
+.marqueecontainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 1; 
+}
+
+.lastbox{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  z-index: 1; 
+}
+
+.lastbox .newslist{
+  padding: 8px 5px 5px 5px;
+}
+
+
+
+.lastbox p{
+  margin: 0px;
+  padding: 0px 3px 10px 3px
+}
+
+
+
+hr{
+  border: 0;
+  height: 0;
+  border-top: 1px solid black;
+}
+
+/*profile*/
+
+
+
+.topcontainer{
+ 
+  padding: 20px;
+  
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 10px;
+  margin-left: 1208px;
+  margin-top: -340px;
+  z-index: 1; 
+  
+}
+
+.card{
+  position: relative;
+  width: 415px;
+  height: 772px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 270px;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to top, #0ed460, #1ABC9C);
+  clip-path: circle(400px at 50% -48.5%);
+}
+
+.titleheader{
+  position: relative;
+  height: 265px;
+}
+
+
+
+
+
+.insidebox{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.insidebox .profileimage{
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: url('b.jpeg') no-repeat center / cover;
+  border: none;
+  margin-bottom: 2px;
+  overflow: hidden;
+  
+}
+
+
+
+
+
+.downcontent{
+  display: flex;
+  padding: 1.7rem 2.5rem 2.6rem 2.5rem;
+}
+
+
+
+.collegetitle{
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 35px;
+  padding-left: 50px ;
+
+
+}
+
+
+
+.detailstext{
+  color: black;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 15px;
+  margin-left:35px;
+}
+
+
+/*boxes*/
+
+.boxbox{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.boxbox ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.boxbox ul li{
+  float:left;
+  list-style: none;
+  width:15%;
+  
+  box-sizing: border-box;
+}
+.boxbox ul li:hover{
+  opacity: 0.8;
+}
+
+.boxbox ul li .bottom{
+  width: 300px;
+  height: 300px;
+  
+  
+  
+  background: #1ABC9C;
+  text-align: center;
+  color:rgb(0, 0, 0);
+  font-size: 30px;
+  border-radius: 10px;
+ 
+}
