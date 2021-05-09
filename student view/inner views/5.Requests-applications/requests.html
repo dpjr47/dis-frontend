@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Profile and Notifications Dropdowns</title>
+	<link rel="stylesheet" href="requests.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".profile .icon_wrap").click(function(){
+			  $(this).parent().toggleClass("active");
+			  $(".notifications").removeClass("active");
+			});
+
+			$(".notifications .icon_wrap").click(function(){
+			  $(this).parent().toggleClass("active");
+			   $(".profile").removeClass("active");
+			});
+
+			$(".show_all .link").click(function(){
+			  $(".notifications").removeClass("active");
+			  $(".popup").show();
+			});
+
+			$(".close").click(function(){
+			  $(".popup").hide();
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="navbar">
+    <div class="navbar_left">
+      <div class="logo">
+        <a href="#">dIs</a>
+      </div>
+    </div>
+
+    <div class="navbar_right">
+      <div class="notifications">
+        <div class="icon_wrap"><i class="far fa-bell"></i></div>
+        
+        <div class="notification_dd">
+            <ul class="notification_ul">
+                <li class=" notif1">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            Notification 1  
+                        </div>
+                    </div>
+                    
+                </li>  
+                <li class=" notif2">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            Notification 2 
+                        </div>
+                    </div>
+                    
+                </li> 
+                <li class=" notif3">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            Notification 3
+                        </div>
+                    </div>
+                    
+                </li>  
+                <li class="notif4">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            Notification 4 
+                        </div>
+                    </div>
+                    
+                </li> 
+                <li class="notif5">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            Notification 5 
+                        </div>
+                    </div>
+                    
+                </li> 
+                <li class="show_all">
+                    <p class="link">Show All Notifications</p>
+                </li> 
+            </ul>
+        </div>
+        
+      </div>
+      <div class="profile">
+        <div class="icon_wrap">
+          <img src="b.jpg" alt="profile_pic">
+          <span class="number">20218057 :</span><span class="name">Muaad bin Zack</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <div class="profile_dd">
+          <ul class="profile_ul">
+            <li class="profile_li"><a class="profile" href="#"><span class="picon"><i class="fas fa-cog"></i>
+                </span>Settings</a>
+              <div class="btn">Logout</div>
+            </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup">
+    <div class="shadow"></div>
+    <div class="inner_popup">
+        <div class="notification_dd">
+            <ul class="notification_ul">
+                <li class="title">
+                    <p>All Notifications</p>
+                    <p class="close"><i class="fas fa-times" aria-hidden="true"></i></p>
+                </li> 
+                <li class=" notif1">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            <b>Notification 1 - 01/02/2021</b>  
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                </li>  
+                <li class=" notif2">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            <b>Notification 2 - 01/02/2021</b>  
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                </li>  
+                <li class=" notif3">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            <b>Notification 3 - 01/02/2021</b>  
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                </li>  
+                <li class=" notif4">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                           <b>Notification 4 - 01/02/2021</b>   
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                </li>  
+                <li class=" notif5">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            <b>Notification 5 - 01/02/2021</b>  
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                </li>  
+                <li class=" notif6">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            <b>Notification 6 - 01/02/2021</b> 
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                
+                </li>  
+            </ul>
+        </div>
+    </div>
+  </div>
+
+  <h1>Requests/Applications</h1>
+  
+<!--add courses-->
+<div class="coursebox">
+    <div class="title">
+      Select application
+    </div>
+    <div class="form">
+        <div class="inputfield">
+         
+          <div class="custom_select">
+            <select>
+              <option value="" selected disabled hidden>Select</option>
+              <option value="">Bonafide</option>
+              <option value="">Supplementary exam reggistration</option>
+            </select>
+          </div>
+       </div> 
+      
+    </div>
+</div>
+  
+  
+<div class="coursebox2">
+    <div class="title">
+      Download pdf of application
+    </div>
+    <div class="form">
+        <div class="inputfield">
+         
+          <div class="custom_select">
+            <select>
+              <option value="" selected disabled hidden>Select</option>
+              <option value="">Bonafide</option>
+              <option value="">Supplementary exam reggistration</option>
+            </select>
+          </div>
+       </div> 
+      
+    </div>
+
+<!--left big box-->
+    <div class="coursebox3">
+        <div class="title">
+          Application for <input type="text" class="input2" placeholder="Selected application" readonly>
+          
+        </div>
+        <div class="form">
+           <div class="inputfield">
+              <label>Name</label>
+              <input type="text" class="input" placeholder="Muaad bin Zack" readonly>
+           </div>  
+            <div class="inputfield">
+                <label>Register Number</label>
+                <input type="number" class="input" placeholder="20218056" readonly>
+            </div>
+             
+           <div class="inputfield">
+              <label>Mobile number</label>
+              <input type="number" class="input" placeholder="95XXXXXXXX4" readonly>
+           </div>
+
+           <div class="inputfield">
+            <label>Email</label>
+            <input type="email" class="input" placeholder="kingoftheocean@gmail.com" readonly>
+         </div>
+         <div class="inputfield">
+            <label>College & division</label>
+            <input type="text" class="input" placeholder="School of Engineering, Division Computer Science & Engineering" readonly>
+         </div> 
+         <div class="inputfield">
+            <label>Course & Branch</label>
+            <input type="text" class="input" placeholder="B.Tech-Computer Science and Engineering" readonly>
+         </div> 
+         
+         <div class="inputfield">
+            <label>Year of Admission</label>
+            <input type="number" class="input" placeholder="2018" readonly>
+         </div> 
+
+         <div class="inputfield">
+            <label>Address</label>
+            <div class="custom_select">
+              <select>
+                <option value="" selected readonly hidden>Choose</option>
+                <option value="">Permanent Address</option>
+                <option value="">Communication address</option>
+              </select>
+            </div>
+         </div> 
+
+         <div class="inputfield">
+            <label></label>
+            <input type="address" class="input" placeholder="address chosento be shown here" readonly>
+         </div>
+        
+         <div class="inputfield" >
+            <label>Purpose of Certificate</label>
+            <input type="text" class="input" placeholder="Enter your purpose here" >
+         </div>
+        
+         <div class="inputfield">
+            <label>Is fee reciept included</label>
+            <div class="custom_select">
+              <select>
+                <option value="" selected readonly hidden>Choose</option>
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </select>
+            </div>
+         </div> 
+         
+         <div class="inputfield">
+              <label>Attach Fee Reciept(if any)</label>
+              <input type="file" class="input">
+           </div> 
+          
+
+          
+
+   
+
+
+          <div class="inputfield">
+            <input type="reset" value="Reset" class="reset" onclick="myFunction()">
+            <input type="submit" value="Submit" class="btn" onclick="myFunction2()">
+           
+          </div>
+        </div>
+    </div>
+    
+  </div>
+    <table>
+      <tr id="header">
+          <th>No.</th>
+          <th>Applied Certifcates</th>
+          <th>Application Status</th>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>XYZ Certificate</td>
+          <td>Pending</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+   
+    
+      
+    
+    
+
+
+
+
+
+<!--background gradient-->
+<div class="header">
+</div>
+    
+    
+<script>
+    function myFunction() {
+      window.confirm("Are you sure you want to clear the data?");
+    }
+    function myFunction2() {
+      window.confirm("Proceed to submit?");
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
