@@ -252,6 +252,10 @@
                 <label>Register Number</label>
                 <input type="number" class="input" placeholder="20218056" readonly>
             </div>
+            <div class="inputfield">
+              <label>Admission number</label>
+              <input type="text" class="input" placeholder="180XXX"  readonly>
+           </div>
              
            <div class="inputfield">
               <label>Mobile number</label>
@@ -261,7 +265,31 @@
            <div class="inputfield">
             <label>Email</label>
             <input type="email" class="input" placeholder="kingoftheocean@gmail.com" >
-         </div>
+           </div>
+            <div class="inputfield">
+              <label>Gender</label>
+              <input type="text" class="input" placeholder="male" readonly>
+           </div>
+           <div class="inputfield">
+              <label>Date of birth</label>
+              <input type="text" class="input" placeholder="26-12-1999" readonly>
+           </div>
+            <div class="inputfield">
+              <label>Mother's name</label>
+              <input type="text" class="input" placeholder="Hazeena Zack"  readonly>
+           </div>
+
+           <div class="inputfield">
+              <label>Father's name</label>
+              <input type="text" class="input" placeholder="Zack"  readonly>
+           </div>
+
+            <div class="inputfield">
+            <label>Year of Admission</label>
+            <input type="number" class="input" placeholder="2018" readonly>
+         </div> 
+
+
          <div class="inputfield">
             <label>College & division</label>
             <input type="text" class="input" placeholder="School of Engineering, Division Computer Science & Engineering" readonly>
@@ -271,24 +299,34 @@
             <input type="text" class="input" placeholder="B.Tech-Computer Science and Engineering" readonly>
          </div> 
          
-         <div class="inputfield">
-            <label>Year of Admission</label>
-            <input type="number" class="input" placeholder="2018" readonly>
-         </div> 
-
+        
          
 
          <div class="inputfield">
-            <label>Permanent address</label>
-                <textarea name="textarea" class="input"  placeholder="Kavarathi P.O,Lakhdeep,Kerala,Pin code : 682555"></textarea>
+            <label><b>Permanent address</b></label>
+         </div>
+         <div class="inputfield">
+            <label>Address Line 1</label>
+                <input type="text"  class="input"  placeholder="Atlantis House">
+         </div>
+         <div class="inputfield">
+            <label>Address Line 2</label>
+                <input  type="text" class="input"  placeholder="Kavarathi P.O">
+         </div>
+         <div class="inputfield">
+            <label>District/Union territory</label>
+                <input type="text"  class="input"  placeholder="Lakhdeep">
+         </div>
+         <div class="inputfield">
+            <label>State</label>
+                <input type="text"  class="input"  placeholder="Kerala">
+         </div>
+         <div class="inputfield">
+            <label>Pin Code</label>
+                <input type="text"  class="input"  placeholder="682555">
          </div>
         
-         <div class="inputfield">
-          <label>Communication address</label>
-              <textarea name="textarea" class="input"  placeholder="Kavarathi P.O,Lakhdeep,Kerala,Pin code : 682555"></textarea>
-       </div>
         
-       
           
 
           
@@ -297,8 +335,7 @@
 
 
           <div class="inputfield">
-            <input type="reset" value="Reset" class="reset" onclick="myFunction()">
-            <input type="submit" value="Submit" class="btn" onclick="myFunction2()">
+            <input type="submit" value="Update" class="btn" onclick="myFunction()">
            
           </div>
         </div>
@@ -339,11 +376,9 @@ Pin code : 682555</span><span></i></li></pre>
     
 <script>
     function myFunction() {
-      window.confirm("Are you sure you want to clear the data?");
+      window.confirm("Are you sure you want to update the data?");
     }
-    function myFunction2() {
-      window.confirm("Proceed to submit?");
-    }
+   
 </script>
 
 </body>
