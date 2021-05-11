@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Profile and Notifications Dropdowns</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".profile .icon_wrap").click(function(){
+			  $(this).parent().toggleClass("active");
+			  $(".notifications").removeClass("active");
+			});
+
+            $(".notifications .icon_wrap").click(function(){
+			  $(this).parent().toggleClass("active");
+			   $(".profile").removeClass("active");
+			});
+
+			$(".show_all .link").click(function(){
+			  $(".notifications").removeClass("active");
+			  $(".popup").show();
+			});
+
+			$(".close").click(function(){
+			  $(".popup").hide();
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="navbar">
+    <div class="navbar_left">
+      <div class="logo">
+        <a href="#">dIs</a>
+      </div>
+    </div>
+
+    <div class="navbar_right">
+        <div class="directmessage"><i class="fas fa-envelope"></i></div>
+        
+      <div class="notifications">
+        <div class="icon_wrap"><i class="far fa-bell"></i></div>
+       
+        
+        <div class="notification_dd">
+            <ul class="notification_ul">
+                <li class=" notif1">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            Notification 1  
+                        </div>
+                    </div>
+                    
+                </li>  
+                <li class=" notif2">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            Notification 2 
+                        </div>
+                    </div>
+                    
+                </li> 
+                <li class=" notif3">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            Notification 3
+                        </div>
+                    </div>
+                    
+                </li>  
+                <li class="notif4">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            Notification 4 
+                        </div>
+                    </div>
+                    
+                </li> 
+                <li class="notif5">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            Notification 5 
+                        </div>
+                    </div>
+                    
+                </li> 
+                <li class="show_all">
+                    <p class="link">Show All Notifications</p>
+                </li> 
+            </ul>
+        </div>
+        
+      </div>
+      <div class="profile">
+        <div class="icon_wrap">
+          <img src="b.jpeg" alt="profile_pic">
+          <span class="number">Desingation :</span><span class="name">Teacher name </span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <div class="profile_dd">
+          <ul class="profile_ul">
+            <li class="profile_li"><a class="profile" href="#"><span class="picon"><i class="fas fa-cog"></i>
+                </span>Settings</a>
+              <div class="btn">Logout</div>
+            </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="popup">
+    <div class="shadow"></div>
+    <div class="inner_popup">
+        <div class="notification_dd">
+            <ul class="notification_ul">
+                <li class="title">
+                    <p>All Notifications</p>
+                    <p class="close"><i class="fas fa-times" aria-hidden="true"></i></p>
+                </li> 
+                <li class=" notif1">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            <b>Notification 1 - 01/02/2021</b>  
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                </li>  
+                <li class=" notif2">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            <b>Notification 2 - 01/02/2021</b>  
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                </li>  
+                <li class=" notif3">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            <b>Notification 3 - 01/02/2021</b>  
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                </li>  
+                <li class=" notif4">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                           <b>Notification 4 - 01/02/2021</b>   
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                </li>  
+                <li class=" notif5">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            <b>Notification 5 - 01/02/2021</b>  
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                </li>  
+                <li class=" notif6">
+                    <div class="notify_icon">
+                        <span class="icon"></span>  
+                    </div>
+                    <div class="notify_data">
+                        <div class="title">
+                            <b>Notification 6 - 01/02/2021</b> 
+                        </div>
+                        <div class="sub_title">
+                          Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                
+                </li>  
+            </ul>
+        </div>
+    </div>
+  </div>
+  
+
+  <!--sidebar
+  <div class="sidebar">
+    <div class="sidebar_inner">
+    <ul>
+        <li>
+            <a href="#">
+                <span class="sbicon"><i class="fas fa-bullseye"></i></span>
+                <span class="text">Action 1</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="sbicon"><i class="fas fa-bullseye"></i></span>
+                <span class="text">Action 2</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="sbicon"><i class="fas fa-bullseye"></i></span>
+                <span class="text">Action 3</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="sbicon"><i class="fas fa-bullseye"></i></span>
+                <span class="text">Action 4</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="sbicon"><i class="fas fa-bullseye"></i></span>
+                <span class="text">Action 5</span>
+            </a>
+        </li>
+    </ul>
+    </div>
+</div>
+</div>
+
+-->
+
+
+
+
+
+
+
+
+<!--profile-->
+<div class="topcontainer">
+    <div class="card">
+        <div class="titleheader">
+            <div class="insidebox">
+                <div class="profileimage"><image src="b.jpeg" alt="profile picture" width="110" height="110"></image></div>
+                <h3 id="pname">Teacher Name</h3>
+                <h3 id="pname">Designation</h3>
+            </div>
+        </div>
+
+        <div class="downcontent">
+            <div class="about-container">
+                <h3 class="collegetitle"><i class="fas fa-university" id="proficon"> <b>:</b><span>School of Engineering</span></i></h3>
+                <ul class="detailstext" style="list-style: none">
+                     <li><i class="fas fa-graduation-cap" id="proficon"><b> : B.Tech - </b><span id="profsub"> Computer Science and Engineering<span></i></li>
+                        <li><i class="fas fa-envelope" id="proficon"> <b>:</b><span> teacher@gmail.com</span></i></li>
+                        <li><i class="fa fa-phone" id="proficon"> <b>:</b> <span>95XXXXXXXX</span></i></li>
+                        <li></li>
+                 </ul> 
+             </div>                 
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+  
+ <!--newsbox-->
+
+<div class="newsbox">
+    <div class="newshead">NEWS</div>
+    <div class="contentbox">
+    <div class="marqueecontainer">
+        <div class="lastbox">
+        <marquee width="100%" direction="up" height="250px" scrollamount="5"  >
+        <div class="newslist">
+        
+            <p>
+            <span><b>10/03/2021</b></span> : xxxxxxxxxxx
+            </p><hr>
+        </div>
+        <div class="newslist">
+            <p>
+            <span><b>10/03/2021</b></span> :xxxxxxxxxxx
+            </p><hr>
+        </div>
+        <div class="newslist">
+            <p>
+            <span><b>10/03/2021</b></span> : xxxxxxxxxxx.
+            </p><hr>
+        </div>
+        <div class="newslist">
+            <p>
+            <span><b>10/03/2021</b></span> : xxxxxxxxxxxxxxxx.
+            </p><hr>
+        </div>
+        <div class="newslist">
+            <p>
+            <span><b>10/03/2021</b></span> : xxxxxxxxx
+            </p><hr>
+        </div>
+        <div class="newslist">
+            <p>
+            <span><b>10/03/2021</b></span> : xxxxxxx
+            </p><hr>
+        </div>
+        </marquee>
+    </div>
+</div>
+  
+
+
+
+<div id="STUDENT">
+    <a href="#">STUDENTS LIST</a href="#">
+</div>
+<div id="ATTENDANCE">
+    <a href="#">ATTENDANCE</a href="#">
+</div>
+<div id="COURSES">
+    <a href="#">COURSES</a href="#">
+</div>
+<div id="INTERNSHIPS">
+    <a href="#">INTERNSHIPS</a href="#">
+</div>
+<div id="APPLICATIONS_REQUESTS">
+    <a href="#">APPLICATIONS/<br/>REQUESTS</a href="#">
+</div>
+<div id="CEEINTERNAL_MARKS">
+    <a href="#">CEE/INTERNAL MARKS</a href="#">
+</div>
+<div id="TIMETABLE">
+    <a href="#">TIMETABLE</a href="#">
+</div>
+<div id="RESULTS">
+    <a href="#">RESULTS</a href="#">
+</div>
+<div id="PREVIOUS">
+    <a href="#">PREVIOUS<br/>QUESTION PAPERS</a href="#">
+</div>
+<div id="RESEARCH">
+    <a href="#">RESEARCH STUDENTS</a href="#">
+</div>
+<div id="REFRESHERS">
+    <a href="#">REFRESHERS COURSES,</br>SEMINARS,</br>CONFERENCE ATTENDED</br>DETAILS</a href="#">
+</div>
+<div id="PUBLICATIONS">
+    <a href="#">PUBLICATIONS</a href="#">
+</div>
+
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
