@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+
+/*semester select*/
+
+.table-contents{
+    display: inline;
+  }
+  
+  :focus {
+      outline: none; 
+  }
+  
+    
+  .select-control {
+      z-index: 5;
+      display: block;
+      width: 100%;
+      height: 30px;
+      padding: 0;
+      margin-left: 20px;
+      margin-top: 50px;
+      background-color:#16a085;
+      font-family: 'Ubuntu', sans-serif;
+  }
+  .select-control::-webkit-input-placeholder {
+      font-size: 14px;
+      color: rgb(0, 0, 0);
+      font-family: inherit;
+  }
+
+
+  #semester {
+    top: -50px;
+    left: 20.5%;
+    width: auto;
+    height: 30px;
+    font-size: 1.17em;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 10px; 
+    color: rgb(0, 0, 0);
+    font-family: inherit;
+    border: 1px solid #bdc3c7;
+    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.5);
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+  }
+  
+  #semester:hover{
+      
+      transform: scale(1.02);
+      box-shadow: none;
+
+      
+    
+  }
+  
+  select option[value=""][disabled] {
+        display: none;
+        
+         
+  }
+     
+  
+  
+
+table {
+    
+    width: max-content;
+    height: 300px;
+    margin-left: 23%;
+    position: relative;
+    border-collapse: collapse;
+    top: -15px;
+    box-shadow: 2px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    transform: scale(1.05);
+    
+    
+}
+ 
+td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+ 
+tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+  }
+ 
+thead{
+    white-space: nowrap;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.5);
+    margin: 10px 10px;
+    z-index: 10;
+
+}
+ 
+#header {
+    background-color: #16a085;
+    color: rgb(0, 0, 0);
+}
+
+
+
+td:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  }
+ 
+ 
