@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance confirm view</title>
+    <link rel="stylesheet" href="css/confirmview.css">
+</head>
+<body>
+    
+    <h3><input type="text" class="head" placeholder="Attendance for the month of : (fetch from table)" readonly> </h3>
+
+    <table id="mytable">
+        <tr id="header"><th>Register Number</th><th>Present</th><th>Absent</th><th>Total hours</th><th>Attendance obtained</th><th>Percentage</th></tr>
+        <tr><td>20218054</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218055</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218056</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218057</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218058</td><td></td><td></td><td></td><td></td><td>100%</td></tr>				
+        <tr><td>20218059</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218060</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218061</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218062</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218063</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218064</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218065</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218066</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218067</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218068</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+        <tr><td>20218069</td><td></td><td></td><td></td><td></td><td>100%</td></tr>
+    </table>
+
+    <input type="button" value="Edit attendance?" class="btn1" onclick="myFunction1()">
+    <input type="button" value="Submit attendance?" class="btn2" onclick="myFunction2()">
+    
+    <script>
+          function myFunction1() {
+              if (confirm("Do you want to continue editing attendance?")) {
+                window.open("attendance.html")
+            } 
+   }
+
+         function myFunction2() {
+               window.confirm("Proceed to add attendance?");
+   }
+    </script>
+
+
+</body>
+</html>
