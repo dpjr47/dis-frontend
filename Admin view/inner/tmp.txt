@@ -1,0 +1,323 @@
+ <!---->
+      <main id="main2">
+        <div class="main__container">
+          <!-- MAIN TITLE STARTS HERE -->
+
+          <div class="main__title">
+            <img src="assets/dp.jpg" alt="" />
+            <div class="main__greeting">
+              <h1>Hello: Name</h1>
+              <p>Welcome to your admin dashboard</p>
+              <p>Session: <span id="clock"></span></p>
+            </div>
+          </div>  
+
+          <!-- MAIN TITLE ENDS HERE -->
+
+         
+
+          <!-- Buttons STARTS HERE -->
+         
+               <div class="btns">
+                   <br>
+                    <h1>Admin Management</h1>
+                    <div class="small_cards">
+                        <button class="card" onclick="show_hide1()">
+                            <div class="card_inner">
+                            <a class="text-primary-p">Add Admin</a>
+                            </div>
+                        </button>  
+            
+                        <button class="card" onclick="show_hide2()">
+                        <div class="card_inner">
+                            <a class="text-primary-p">Delete Admin</a>
+                            </div>
+                        </button>
+            
+                        <button class="card" onclick="show_hide3()">
+                            <div class="card_inner">
+                            <a class="text-primary-p">Update Admin details </a> 
+                            </div>
+                        </button>
+            
+                        <button class="card" onclick="show_hide4()">
+                            <div class="card_inner">
+                            <a class="text-primary-p">Full list</a>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+          
+          <!-- buttons ENDS HERE -->
+
+          <!-- clickdivs start HERE -->
+            <div class="divbox">
+           <!-- clickdiv1 -->
+                <div class="addbox"  id="one">
+                  <div class="addcontent">
+                    <form action="#">
+                      <div class="user-details">
+                        <div class="input-box">
+                          <span class="details">Name</span>
+                          <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Date of Birth</span>
+                          <input type="date"  required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Email</span>
+                          <input type="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Phone Number</span>
+                          <input type="text" placeholder="Enter your number" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Address</span>
+                          <input type="text" placeholder="Enter your address" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">City</span>
+                          <input type="text" placeholder="City" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">District</span>
+                          <input type="text" placeholder="District" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">State/UT</span>
+                          <input type="text" placeholder="State/Union Territory" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Pincode</span>
+                          <input type="text" placeholder="Pincode" required>
+                        </div> 
+                        <div class="input-box">
+                          <span class="details">Date of Joining</span>
+                          <input type="date" placeholder="Date of Joining" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">College</span>
+                          <input type="text" placeholder="School of Engineering" disabled>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Division</span>
+                          <input type="text" placeholder="Computer Science and Engineering" disabled>
+                        </div>     
+                      </div>
+                      <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <input type="radio" name="gender" id="dot-3">
+                        <span class="gender-title">Gender</span>
+                        <div class="category">
+                          <label for="dot-1">
+                          <span class="dot one"></span>
+                          <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                          <span class="dot two"></span>
+                          <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                          <span class="dot three"></span>
+                          <span class="gender">Prefer not to say</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="button">
+                        <input type="submit" value="Register">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+           <!-- clickdiv1 -->
+                
+           <!-- clickdiv2 -->
+                <div class="addbox" id="two">
+                  <table>
+                    <thead>
+                       <tr>
+                           <th>Name</th>
+                           <th>Date of Joining</th>
+                           <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Name 1</td>
+                        <td>20/10/2021</td>
+                        <td><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Name 2</td>
+                        <td>20/10/2021</td>
+                        <td><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Name 3</td>
+                        <td>20/10/2021</td>
+                        <td><button>Delete</button></td>
+                    </tr>
+              </table>
+                </div>
+           <!-- clickdiv2 -->
+
+           <!-- clickdiv3 -->
+                <div class="addbox" id="three">
+                  <div class="addcontent">
+                    <form action="#">
+                      <div class="user-details">
+                        <div class="input-box">
+                          <span class="details">Select Admin</span>
+                          <select >
+                            <option value="" selected disabled hidden>Choose Admin Account</option>
+                            <option value="">Name 1</option>
+                            <option value="">Name 2</option>
+                            <option value="">Name 3</option>
+                            <option value="">Name 4</option>
+                          </select>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Name</span>
+                          <input type="text" placeholder="name" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Date of Birth</span>
+                          <input type="date"  required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Email</span>
+                          <input type="email" placeholder="email" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Phone Number</span>
+                          <input type="text" placeholder="number" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Address</span>
+                          <input type="text" placeholder="address" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">City</span>
+                          <input type="text" placeholder="City" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">District</span>
+                          <input type="text" placeholder="District" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">State/UT</span>
+                          <input type="text" placeholder="State/Union Territory" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Pincode</span>
+                          <input type="text" placeholder="Pincode" required>
+                        </div> 
+                        <div class="input-box">
+                          <span class="details">Date of Joining</span>
+                          <input type="date" placeholder="Date of Joining" required>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">College</span>
+                          <input type="text" placeholder="School of Engineering" disabled>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Division</span>
+                          <input type="text" placeholder="Computer Science and Engineering" disabled>
+                        </div>     
+                      </div>
+                      <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <input type="radio" name="gender" id="dot-3">
+                        <span class="gender-title">Gender</span>
+                        <div class="category">
+                          <label for="dot-1">
+                          <span class="dot one"></span>
+                          <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                          <span class="dot two"></span>
+                          <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                          <span class="dot three"></span>
+                          <span class="gender">Prefer not to say</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="button">
+                        <input type="submit" value="Register">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+           <!-- clickdiv3 -->
+
+           <!-- clickdiv4 -->
+           <div class="addbox" id="four">
+            <table>
+              <thead>
+                 <tr>
+                     <th>Name</th>
+                     <th>Date of birth</th>
+                     <th>Email</th>
+                     <th>Phone</th>
+                     <th>Address</th>
+                     <th>City</th>
+                     <th>District</th>
+                     <th>State/UT</th>
+                     <th>Pincode</th>
+                     <th>Date of joining</th>
+                  </tr>
+              </thead>
+              <tr>
+                  <td>Name 1</td>
+                  <td>20/10/2000</td>
+                  <td>abc@gmail.com</td>
+                  <td>94XXXXXX45</td>
+                  <td>Address</td>
+                  <td>City</td>
+                  <td>District</td>
+                  <td>State/UT</td>
+                  <td>454575</td>
+                  <td>10/10/2020</td>
+              </tr>
+              <tr>
+                <td>Name 1</td>
+                <td>20/10/2000</td>
+                <td>abc@gmail.com</td>
+                <td>94XXXXXX45</td>
+                <td>Address</td>
+                <td>City</td>
+                <td>District</td>
+                <td>State/UT</td>
+                <td>454575</td>
+                <td>10/10/2020</td>
+            </tr>
+            <tr>
+              <td>Name 1</td>
+              <td>20/10/2000</td>
+              <td>abc@gmail.com</td>
+              <td>94XXXXXX45</td>
+              <td>Address</td>
+              <td>City</td>
+              <td>District</td>
+              <td>State/UT</td>
+              <td>454575</td>
+              <td>10/10/2020</td>
+          </tr>
+        </table>
+          </div>
+           <!-- clickdiv4 -->
+            </div>
+          <!-- clickdivs ENDS HERE -->
+      </main>
+      <!---->
+
+      <!--
+      <main id="main3">
+
+      </main>
+      -->
