@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Teacher | Home</title>
+    <script>
+      $(document).ready(function(){
+        $(".profile .icon_wrap").click(function(){
+          $(this).parent().toggleClass("active");
+          $(".notifications").removeClass("active");
+        });
+      });
+    </script>
+  </head>
+  <body id="body">
+    <div class="container"> <!--div closed at end-->
+      <nav class="navbar">
+        <img id="logo" src="assets/newlogo.png" alt="logo"  style="width: 140px; margin-left: 10px ; ">
+        
+        <div class="navbar_right">
+          <div class="profile">
+            <div class="icon_wrap">
+                <span style="font-size: 1.2em;">Welcome : &emsp; </span>
+              <img src="assets/20218521.jpeg" alt="profile_pic">
+              <span class="number">{{user.designation}} :</span><span class="name">{{user.name}}</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+    
+            <div class="profile_dd" >
+              <ul class="profile_ul" style=" list-style-type: none;">
+                <li class="profile_li"><a class="profile"><span class="picon"><i class="fas fa-cog"></i>
+                    </span>Settings</a>
+                    <a><div class="btn">Logout</div></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        
+      </nav>
+   
+
+
+      <main id="home">
+        <div class="main__container">
+
+
+          <section>
+            <div class="main__title">
+             
+              <img src="assets/20218521.jpeg" alt="" />
+              <div class="main__greeting">
+                <h1>{{user.designation}}</h1> 
+                <h1>{{user.name}}</h1>
+                <p>Welcome to DIS</p>
+                <p>Session: <span id="clock"></span></p>
+              </div>
+              </div>
+          </section>
+
+
+          <div class="main__cards">
+
+
+            <div class="card">
+              <div class="card_inner">
+                
+                <h3>NEWS</h3> 
+                <marquee  direction="up" height="405vh" scrollamount="5"  >
+                  
+                  <div class="newslist">
+                      {{#each news}}
+                      <p>
+                      <span><b>{{this.news_date}}</b></span> : {{this.news_content}}
+                      </p><hr>
+                      {{/each}}
+                  </div>
+                
+                </marquee>
+            </div>
+            </div>
+        </div>  
+
+         
+          
+
+            
+        
+       
+          <div class="charts">
+            
+
+            <div class="charts__right">
+              
+
+              <div class="charts__right__cards">
+                <button class="card1" >
+                  <h1>STUDENTS LIST</h1>
+                </button>
+
+                <button class="card2" >
+                  <h1>RESEARCH STUDENTS</h1>
+                </button>
+
+                <button class="card3">
+                  <h1>CEE/INTERNAL MARKS ENTRY</h1>
+                </button>
+
+                <button class="card4">
+                  <h1>ATTENDANCE ENTRY</h1>
+                </button>
+
+                <button class="card5">
+                  <h1>PUBLICATIONS</h1>
+                </button>
+
+                <button class="card6">
+                  <h1>PREVIOUS QUESTION PAPERS</h1>
+                </button>
+
+                <button class="card7">
+                  <h1>REFRESHER COURSES</h1>
+                </button>
+
+                <button class="card8">
+                  <h1>SEMINARS & CONFERENCES</h1>
+                </button>
+
+                <button class="card9">
+                  <h1>APPLICATIONS/REQUESTS</h1>
+                </button>
+
+                <button class="card10">
+                  <h1>PERSONAL DETAILS</h1>
+                </button>
+
+                <button class="card11">
+                  <h1>VIEW ATTENDANCE</h1>
+                </button>
+
+                <button class="card12">
+                  <h1>VIEW INTERNALS</h1>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      </main>
+
+
+ 
+
+       
+
+
+      
+
+
+    </div><!--dont delete main container div end-->
+    <script src="js/script.js"></script>
+<!--clock for sessiontime-->
+  <script type="text/javascript">
+      const dateDiv = document.getElementById('clock');
+
+      function myDateFunction() {
+        const now = new Date();
+        const nowStr = now.toLocaleString('en-US');
+        dateDiv.innerHTML = nowStr;
+      }
+      setInterval(myDateFunction, 1000);
+  </script>
+
+  </body>
+</html>
