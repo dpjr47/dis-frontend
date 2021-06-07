@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/management.css" />
+    <link rel="icon" href="assets/logo.png" type="image/icon type">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>ADMIN | Teacher</title>
+  </head>
+  <body id="body">
+    <div class="container">
+      <nav class="navbar">
+        
+      
+        <div id="dp-name">
+        <img src="assets/dp.jpg" alt="" id="top_dp"/>
+        <div id="dp-sub">
+        <h1>Hello Admin: Name</h1>
+        <p>Session: <span id="clock"></span></p> 
+        </div>
+        </div>
+        <div class="logout" onclick="togglePopup()"><i class="fa fa-power-off" ></i><a>Log out</a></div>
+      </nav>
+      <!--Popup-->
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Thank You!</h1>
+        <p>Session ended.</p>
+        <h5>Redirecting now<a class="wavy">
+          <span style="--i:1;">.</span>
+          <span style="--i:2;">.</span>
+          <span style="--i:3;">.</span>
+          <span style="--i:4;">.</span></a></h5>
+      </div>
+     </div>
+
+     <!--main 1 admn management-->
+      <main id="main1">
+        <div class="main__container">
+         <!-- clickdivs start HERE -->
+            <div class="divbox">
+           <!-- clickdiv1 -->
+                <div class="addbox"  id="one">
+                  <div class="title">Refresher courses</div> <br>
+                  <div class="addcontent">                    
+                    <table>
+                        <thead>
+                            <tr>
+                             <th>Name</th>
+                             <th>Type</th>
+                             <th>Topic Dealt</th>
+                             <th>Date</th>
+                             <th>Number of days</th>
+                             <th>Attached file</th>
+                            </tr>                                                       
+                        </thead>
+                        <tbody>
+                         <tr>             
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                            </tr>
+                            <tr>             
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                            </tr>
+                            <tr>             
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                             <td></td>
+                            </tr>         
+                        </tbody>
+                    </table>
+                      
+                  </div>
+                </div>
+           <!-- clickdiv1 -->
+                
+       
+          
+            </div>
+          <!-- clickdivs ENDS HERE -->
+      </main>
+      <!---->
+      
+      <!--main 2 admn mangemnt-->
+      <main id="main2">
+        <div class="main__container">
+          <!-- clickdivs start HERE -->
+             <div class="divbox">
+            <!-- clickdiv1 -->
+                 <div class="addbox"  id="one">
+                   <div class="title">Seminars and Conferences</div> <br>
+                   <div class="addcontent">
+                    <table>
+                       <thead>
+                           <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Topic Dealt</th>
+                            <th>Date</th>
+                            <th>Number of days</th>
+                            <th>Attached file</th>
+                           </tr>                                                       
+                       </thead>
+                       <tbody>
+                        <tr>             
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                           </tr>
+                           <tr>             
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                           </tr>
+                           <tr>             
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                           </tr>         
+                       </tbody>
+                   </table>
+                       
+                   </div>
+                 </div>
+            <!-- clickdiv1 -->
+                 
+        
+           
+             </div>
+           <!-- clickdivs ENDS HERE -->
+      </main>
+      <!---->
+
+      <!--main 3 of admn managmnt-->
+      <main id="main3">
+        <div class="main__container">
+          <!-- clickdivs start HERE -->
+             <div class="divbox">
+            <!-- clickdiv1 -->
+                 <div class="addbox"  id="one">
+                   <div class="title">Publications</div> <br>
+                   <div class="addcontent">
+                    
+                    <table>
+                       <thead>
+                           <tr>
+                            <th>No.</th>
+                            <th>Title</th>
+                            <th>Name/Issue</th>
+                            <th>ISBN no.</th>
+                            <th>Year</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                           </tr>
+                           <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                           </tr>
+                           <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                           </tr>
+                       </tbody>
+                   </table>
+                       
+                   </div>
+                 </div>
+            <!-- clickdiv1 -->
+                 
+        
+           
+             </div>
+           <!-- clickdivs ENDS HERE -->
+      </main>
+     <!-- -->
+     
+
+      <div id="sidebar">
+        <div class="sidebar__title">
+          <div class="sidebar__img">
+            <img  src="assets/logow.png" alt="logo" />
+            <h1 class="admn_panel">ADMIN</h1>
+          </div>
+          </div>
+
+        <div class="sidebar__menu">
+          <h2>Student Panel</h2>
+          <div class="sidebar__link">
+            <button onclick="mainshow1()">Refresher courses</button>
+          </div>
+          <div class="sidebar__link">
+            <button onclick="mainshow2()">Seminars and Conferences</button>
+          </div>
+          <div class="sidebar__link">
+            <button onclick="mainshow3()">Publications</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+<!--clock for sessiontime-->
+  <script type="text/javascript">
+      
+  </script>
+  <script>
+   
+    </script>
+
+  </body>
+</html>
