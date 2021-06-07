@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>DIS | Login</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'><link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="logosmall.png" type="image/x-icon">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Wrapper Area -->
+<div class="wrapper__area" id="wrapper_Area">
+  <!-- Forms Area -->
+  <div class="forms__area">
+    <!-- Login Form -->
+    <form class="login__form" id="loginForm">
+      <!-- Form Title -->
+      <h1 class="form__title">Students' Login</h1>
+      <!-- inputs Groups -->
+      <div class="input__group">
+        <label class="field">
+          <input type="text" name="username" placeholder="Register Number" id="loginUsername">
+        </label>
+        <span class="input__icon"><i class="bx bx-user"></i></span>
+        <small class="input__error_message"></small>
+      </div>
+      <div class="input__group">
+        <label class="field">
+          <input type="password" name="password" placeholder="Password" id="loginPassword">
+        </label>
+        <span class="input__icon"><i class="bx bx-lock"></i></span>
+        <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+        <small class="input__error_message"></small>
+      </div>
+      <div class="form__actions">
+        <label for="checkboxInput" class="remeber_me">
+          <input type="checkbox" id="checkboxInput">
+          <span class="checkmark"></span>
+          <span>Remeber Me</span>
+        </label>
+        <div class="forgot_password">Forgot Password?</div>
+      </div>
+      <!-- Login Button -->
+      <button type="submit" class="submit-button" id="loginSubmitBtn">Submit</button>
+      
+    </form> <!-- End Login Form -->
+
+    <!-- Sign Up Form -->
+    <form class="sign-up__form" id="signUpForm">
+      <!-- Form Title -->
+      <h1 class="form__title">Teachers' Login</h1>
+      <!-- inputs Groups -->
+      <div class="input__group">
+        <label class="field">
+          <input type="text" name="username" placeholder="PEN id" id="loginUsername">
+        </label>
+        <span class="input__icon"><i class="bx bx-user"></i></span>
+        <small class="input__error_message"></small>
+      </div>
+      <div class="input__group">
+        <label class="field">
+          <input type="password" name="password" placeholder="Password" id="loginPassword">
+        </label>
+        <span class="input__icon"><i class="bx bx-lock"></i></span>
+        <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+        <small class="input__error_message"></small>
+      </div>
+      <div class="form__actions">
+        <label for="checkboxInput" class="remeber_me">
+          <input type="checkbox" id="checkboxInput">
+          <span class="checkmark"></span>
+          <span>Remeber Me</span>
+        </label>
+        <div class="forgot_password">Forgot Password?</div>
+      </div>
+      <!-- Login Button -->
+      <button type="submit" class="submit-button" id="loginSubmitBtn">Submit</button>
+    </form> <!-- End Sign Up Form -->
+  </div><!-- End Forms Area -->
+
+  <!-- Aside Area -->
+  <div class="aside__area" id="aside_Area">
+    <div class="login__aside-info">
+      <h4>Welcome!</h4><br><br>
+      <img src="logo.png" alt="Image">
+      <p>Not a student?<br>click below</p>
+      <button id="aside_signUp_Btn">Teachers' Login</button>
+    </div>
+    <div class="sign-up__aside-info">
+      <h4>Welcome!</h4><br><br>
+      <img src="logo.png" alt="Image">
+      <p>Not a Teacher? <br> Click below</p>
+      <button id="aside_signIn_Btn">Students' Login</button>
+    </div>
+  </div>
+</div>
+<!-- End Wrapper Area -->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
