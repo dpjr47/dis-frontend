@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="settings.css" />
+    <link rel="icon" href="/logos/logo.png" type="image/icon type">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"></script>
+    <title>DIS | Settings</title>
+  </head>
+  <body id="body">
+    <div class="container">
+      <nav class="navbar">
+        <img id="logo" src="assets/newlogo.png" alt="logo"  style="width: 140px; margin-left: 10px ; ">
+        
+        <div class="navbar_right">
+          <div class="profile">
+            <div class="icon_wrap">
+                <span style="font-size: 1.2em;">Welcome : &emsp; </span>
+              <img src="assets/20218521.jpeg" alt="profile_pic">
+              <span class="number">{{user.register_no}} :</span><span class="name">{{user.name}}</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>  
+          </div>
+        </div>
+    
+        
+      </nav>
+      
+
+     <!--main 1 admn management-->
+      <main id="main1">
+        <div class="main__container">
+          <!-- clickdivs start HERE -->
+            <div class="divbox">
+              <!-- clickdiv1 -->
+                <div class="addbox" >
+                  <h1>Change Password</h1>
+                  <div class="addcontent">
+                    <form>
+                      <div class="user-details">
+                        <div class="input-box">
+                          <input type="text" placeholder="Enter your old password" required>
+                        </div>
+                        <div class="input-box">
+                          <input type="password" placeholder="Enter your new password" required>
+                        </div>
+                        <div class="input-box">
+                          <input type="text" placeholder="Confirm your new password" required>
+                        </div>
+                      </div>
+                    </form>
+                   
+                  <div class="printbutton">
+                    <input type="button" value="Submit" class="printbtn">
+                  </div>
+                  </div>
+
+                </div>
+              <!-- clickdiv1 -->
+            </div>
+          <!-- clickdivs ENDS HERE -->
+        </div>
+      </main>
+      <!---->
+    
+    </div>
+
+    <script>
+      //date and time
+const dateDiv = document.getElementById("clock");
+
+function myDateFunction() {
+  const now = new Date();
+  const nowStr = now.toLocaleString("en-US");
+  dateDiv.innerHTML = nowStr;
+}
+setInterval(myDateFunction, 1);
+    </script>
+    
+  </body>
+</html>
